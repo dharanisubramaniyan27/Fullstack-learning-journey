@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.12.1/JsBarcode.all.min.js" integrity="sha512-fLmJPYDfCIAZ0gpG/iiIzPw113KquhzI1bxG0XhiLYyqm8Ax2lEiq1h1qv2vafH9tLzkjm4HYRWSeKoGFH4xIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <canvas id="demo1"></canvas>
+    <script>
+        JsBarcode("#demo1", "Dharani")
+    </script>
+    <br>
+    <canvas id="demo2"></canvas>
+    <script>
+        JsBarcode("#demo2", "Shamitha")
+    </script>
+    <br>
+    <canvas id="demo3"></canvas>
+    <script>
+        JsBarcode("#demo3", "Snowfa Fenchi")
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="./DetailOfForms.html" method="" target="_blank">
+        <fieldset>
+            <legend>CASUAL FORM</legend>
+
+            <label for="">Name:</label>
+            <input type="text" name="name" placeholder="Enter your Name" value="Dharani" minlength="3" maxlength="10" size="50px" readonly> <br> <br>
+
+            <label for="">Password :</label>
+            <input type="password" name="password" placeholder="Enter your Password" required> <br><br>
+
+            <label for="">Email :</label>
+            <input type="email" name="email" value="abc123@gmail.com"> <br> <br>
+
+            <label for="">Age :</label>
+            <input type="number" min="18" max="35" step="3"> <br> <br>
+
+            <label for="">Phone No :</label>
+            <!-- what type of data[]and sixe{} -->
+            <input type="tel" pattern="[0-9]{10}"> <br> <br>
+            
+            <label for="">Enter Url :</label>
+            <input type="url"> <br><br>
+
+            <input type="reset">
+            <input type="submit"> <br><br>
+
+            <input type="button" value="Button"> <br><br>
+
+            <label for="">Select Color :</label>
+            <input type="color"> <br> <br>
+
+            <label for="">Range :</label>
+            <input type="range"> <br><br>
+
+            <label for="">Radio :</label>
+            <input type="radio"name="abc-same name for both">MALE
+            <input type="radio"name="abc-same name for both">FEMALE <br><br>
+
+            <label for="">Select Language :</label>
+            <input type="checkbox" checked>ENGLISH
+            <input type="checkbox">HINDI
+            <input type="checkbox" checked>TAMIL
+            <input type="checkbox">KANNADA
+            <input type="checkbox">MALAYALAM
+            <input type="checkbox" disabled>TELUGU
+            <input type="checkbox" disabled>PUNJABI <br><br>
+
+            <label for="">Search :</label>
+            <input type="search"> <br><br>
+
+            <label for="">Select File :</label>
+            <input type="file"> <br><br>
+
+            <label for="">Date :</label>
+            <input type="date"> <br><br>
+
+            <label for="">Time :</label>
+            <input type="time"> <br><br>
+
+            <label for="">Month :</label>
+            <input type="month"> <br><br>
+
+            <label for="">Week :</label>
+            <input type="week"> <br><br>
+
+            <label for="">Local date&time :</label>
+            <input type="datetime-local"> <br><br>
+
+            <label for="">Address :</label>
+            <textarea rows="5" cols="79">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem veritatis fugiat, ut totam, adipisci odit quibusdam nulla similique consectetur vitae repudiandae eius mollitia nam qui. Corrupti officiis possimus quidem explicabo sed sunt amet! Repudiandae dolor ducimus asperiores quidem? Eius ducimus neque sint, impedit exercitationem tenetur eos explicabo ipsam laudantium.</textarea> <br> <br>
+
+            <label for="">Select Languages</label>
+            <select>
+                <!-- It is for display the content and hidden is used to avoid the 1st empty option -->
+                <option value="" hidden>Enter your Country</option>
+                <option value="">INDIA</option>
+                <option value="">UAE</option>
+                <option value="">USA</option>
+                <option value="">JAPAN</option>
+                <option value="">UK</option>
+                <option value="">CHINA</option>
+                <option value="">ENGLAND</option>
+                <option value="">NEWZEALAND</option>
+                <option value="">AUSTRIA</option>
+            </select>
+
+        </fieldset>
+    </form>
+</body>
+</html>

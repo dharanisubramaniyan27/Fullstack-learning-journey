@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedoelement</title>
+    <style>
+        #demo ::first-letter{
+            color: deeppink;
+            font-size:30px;
+        }
+        #demo1 ::first-line{
+            color: red;
+            background-color: yellow;
+        }
+        #demo2::before{
+            content="Hello"
+        }
+        #demo3::before{
+            content:😏;
+        }
+        #demo4::after{
+            content=""
+        }
+    </style>
+</head>
+<body>
+
+    <!-- FIRST LETTER -->
+    <h1 id="demo">Dharani</h1>
+    <hr>
+
+    <!-- FISRT LINE -->
+     <p id="demo1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, consequatur. Hic ea eveniet exercitationem libero maxime itaque, illo magnam vero. Nulla laboriosam consectetur nesciunt alias!</p>
+     <hr>
+
+     <!-- BEFORE -->
+      <h1 id="demo2">World</h1>
+      <h1 id="demo3">heyy</h1>
+      <hr>
+
+      <!-- AFTER -->
+      <h1 id="demo4">Poda</h1>
+      <h1 id="demo5">Eruma</h1>
+      <hr>
+
+</body>
+</html>
