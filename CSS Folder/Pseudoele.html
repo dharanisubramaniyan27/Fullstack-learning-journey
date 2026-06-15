@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psuedoelement</title>
     <style>
-        #demo ::first-letter{
+        #demo::first-letter{
             color: deeppink;
             font-size:30px;
         }
-        #demo1 ::first-line{
+        #demo1::first-line{
             color: red;
             background-color: yellow;
         }
         #demo2::before{
-            content="Hello"
+            content: "Hello"
         }
         #demo3::before{
-            content:😏;
+            content:"😏";
         }
         #demo4::after{
-            content=""
+            content: "Hey"
+        }
+        #demo5::after{
+            content: "U 💕";
         }
     </style>
 </head>
@@ -40,8 +43,8 @@
       <hr>
 
       <!-- AFTER -->
-      <h1 id="demo4">Poda</h1>
-      <h1 id="demo5">Eruma</h1>
+      <h1 id="demo4">Hii</h1>
+      <h1 id="demo5">Thank</h1>
       <hr>
 
 </body>
