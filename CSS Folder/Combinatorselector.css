@@ -1,0 +1,42 @@
+       div p{
+            color:red;
+            background-color:yellow;
+            text-align: center;
+            padding: 10px;
+        }
+
+        span>h1{
+            color:whitesmoke;
+            background-color: blue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div>span>h1{
+            color: antiquewhite;
+            background-color: deeppink;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h2+p{
+            color: whitesmoke;
+            background-color: purple;
+            text-align: center;
+        }
+        
+        h1+p+h2{
+            color: aqua;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        h1+p{
+            color: black;
+            background-color: blue;
+            text-align: center;
+        }
+
+        h1~p{
+            color: antiquewhite;
+            background-color: blueviolet;
+        }
