@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector</title>
+    <style>
+
+        a:link{
+            color: brown;
+        }
+        a:active{
+            color: green;
+        }
+        a:visited{
+            color: orangered;
+        }
+
+        input:focus{
+            height: 100px;
+            width: 100px;
+            color: aqua;
+            background-color: darkblue;
+        }
+
+        input:checked{
+            accent-color:red;
+            height: 80px;
+            width: 80px;
+        }
+        [type="checkbox"]:checked{
+            accent-color: green;
+            height: 120px;
+            width: 120px;
+        }
+        [type="radio"]:checked{
+            accent-color:aqua;
+            height: 50px;
+            width: 50px;
+        }
+
+
+        p:hover{
+            color: whitesmoke;
+            background-color: deeppink;
+            text-decoration:underline;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- LINK, ACTIVE AND VISITED -->
+     <a href="https://www.flipkart.com/">Flipkart</a> 
+     <a href="https://www.primevideo.com/">PrimeVideo</a> <br> <br>
+
+    <!-- CONTROL -->
+     <input type="text"> <br> <br>
+
+     <!--CHECKED  -->
+     <input type="checkbox">
+     <input type="radio"><br><br>
+
+     <!-- HOVER -->
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quas voluptatem consequatur est facere deserunt, ipsum a vero, accusantium dolorem eos sequi nulla, animi laudantium ratione. Inventore aliquid, sequi perferendis animi tempora ipsum voluptates dolorum voluptate! Quod nobis amet, repudiandae a consectetur eos laborum voluptates perspiciatis repellat eius, esse ullam est odio porro corporis rem ipsum harum officia atque beatae reprehenderit consequuntur animi nemo cumque. Mollitia molestias laudantium ipsa officiis corporis! At possimus reprehenderit, cumque rerum, reiciendis expedita non illum illo porro consequuntur fugit eaque obcaecati consectetur natus velit dicta quis aspernatur ullam quidem minima deleniti tempora commodi! Quaerat!</p>
+</body>
+</html>

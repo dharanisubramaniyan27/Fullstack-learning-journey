@@ -23,8 +23,33 @@
             content: "Hey";
         }
         #demo5::after{
-            content: "U 💕";
+            content: "u 💕";
         }
+
+        ol>li::marker{
+            color: red;
+        }
+
+        ul>li::marker{
+            color: blue;
+            content: "😍";
+        }
+        #id1::marker{
+            content: "❤️";
+        }
+        #id2::marker{
+            content: "💕";
+        }
+        #id3::marker{
+            content: "💖";
+        }
+
+        #para1::selection{
+            color: aliceblue;
+            background-color: deeppink;
+        }
+
+
     </style>
 </head>
 <body>
@@ -46,6 +71,27 @@
       <h1 id="demo4">Hii</h1>
       <h1 id="demo5">Thank</h1>
       <hr>
+
+      <!-- MARKER -->
+       <ol>
+        <li>Dharani</li>
+        <li>Shamitha</li>
+        <li>Bhavana</li>
+        <li>Hemapriya</li>
+       </ol>
+
+       <ul>
+        <li id="id1">Snowin</li>
+        <li id="id2">Anish</li>
+        <li id="id3">Kumar</li>
+        <li id="id4">Ajay</li>
+       </ul>
+       <hr>
+
+       <!-- SELECTION -->
+        <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam aperiam accusantium alias, odio quo commodi, sunt, dicta obcaecati tenetur nisi mollitia magnam quas nostrum explicabo delectus nesciunt aliquid corrupti id. Qui vitae inventore expedita voluptatum nam et labore aspernatur! Laborum nemo, ut dolor ratione corporis iusto quaerat? Soluta, ipsa?</p>
+        
+
 
 </body>
 </html>
