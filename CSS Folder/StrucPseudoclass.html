@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural PseudoClass Selector</title>
+    <style>
+        div>h1:first-child{
+            color: white;
+            background-color: blue;
+            text-align: center;
+        }                                                                                      
+        div>p:last-child{
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+        div>h1:nth-child(4){
+            color: aqua;
+            background-color: chartreuse;
+        }
+        div>h1:nth-child(even){
+            color:white;
+            background-color:deeppink;
+        }
+        div>h1:nth-child(odd){
+            color:white;
+            background-color:darkmagenta;
+        }
+
+        #demo>:nth-child(even){
+            color: black;
+            background-color: goldenrod;
+        }
+        #demo>:nth-child(odd){
+            color: white;
+            background-color: deeppink;
+        }
+        #demo>p:nth-child(5){
+            color: aqua;
+            background-color: blueviolet;
+            padding :30px;
+            text-align:center;
+        }
+
+
+        #demo1>:first-of-type{
+            color: cadetblue;
+            background-color: chartreuse;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #demo2>:last-of-type{
+            color:aliceblue;
+            background-color: brown;
+            text-align: center;
+            padding: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- FISRT CHILD AND LAST CHILD -->
+     <div>
+        <h1>Balaji</h1>
+        <h2>Arun</h2>
+        <p>Ragul</p>
+        <h1>Ragunath</h1>
+        <p>Kamal</p>
+     </div>
+     <hr>
+     <div>
+        <h1>Preetha</h1>
+        <p>Deepa</p>
+        <h2>Geetha</h2>
+        <h1>Seetha</h1>
+        <p>Mithra</p>
+     </div>
+     <hr>
+
+     <!-- Nth CHILD -->
+      <div>
+        <h1>Snowin</h1>
+        <h1>Anish</h1>
+        <h1>Kumar</h1>
+        <h1>Ajay</h1>
+        <h1>Danesh</h1>
+        <h1>Aromal</h1>
+        <h1>Gopi</h1>
+      </div>
+      <hr>
+
+      <!-- Nth CHILD WITHOUT USING TAGNAME -->
+       <div id="demo">
+       <h1>Peddi</h1>
+       <p>Vicky</p>
+       <h2>Rishi</h2>
+       <h1>Balaji</h1>
+       <p>Gowtham</p>
+       <h1>Kalyan</h1>
+       </div>
+       <hr>
+
+       <!-- FIRST-OF-TYPE AND LAST-OF-TYPE -->
+        <div id="demo1">
+            <h3>Vikram</h3>
+            <h2>Ishaan</h2>
+            <p>Zyan</p>
+            <h3>Kishaan</h3>
+            <p>Varun</p>
+        </div>
+
+        <div id="demo2">
+            <h3>Tara</h3>
+            <h2>Nisha</h2>
+            <p>Mesika</p>
+            <h3>Yasika</h3>
+            <p>Swetha</p>
+        </div>
+</body>
+</html>

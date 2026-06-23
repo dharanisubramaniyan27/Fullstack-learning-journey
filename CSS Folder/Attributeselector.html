@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        [title]{
+            color: red;
+            background-color: yellow;
+            padding: 15px;
+            text-align: center;
+        }
+
+        [id="minnu"]{
+            color:blue;
+            background-color: aquamarine;
+            padding: 15px;
+            text-align: center;
+        }
+
+        [id~="id1"]{
+            color: brown;
+            background-color: cornsilk;
+            padding: 15px;
+            text-align: center;
+        }
+
+        [class|="t1"]{
+            color: white;
+            background-color: deeppink;
+            padding:15px;
+            text-align: center;
+        }
+
+        [class^="cls"]{
+            color: white;
+            background-color:black;
+            padding:15px;
+            text-align: center;
+        }
+        [id$="demoo"]{
+            color: white;
+            background-color:blue;
+            padding:15px;
+            text-align: center;
+        }
+
+        [id*="para"]{
+            color: white;
+            background-color:darkmagenta;
+            padding:15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- ATTRIBUTE NAME -->
+    <p id="dem">Ragu</p>
+    <p title="dem">Ragul</p>
+    <p class="class">Arun</p>
+    <p title="pa">Rudra</p>
+    <p id="pa">Dharan</p>
+    <hr>
+
+    <!-- ATTRIBUTE = "VALUE" -->
+     <p id="minnu">Yadhav</p>
+     <p id=" minnu">Mukil</p>
+     <p id="minnu ">Subramani</p>
+     <p id=" minnu ">Rajesh</p>
+     <p id="minni">Ramesh</p>
+     <hr>
+
+    <!-- ATTRIBUTE~="VALUE" -->
+     <p id="id1">Rose</p>
+     <p id="id1 ">Jasmine</p>
+     <p id=" id1 ">Lotus</p>
+     <p id="id">Tulip</p>
+     <p id=" id1">Sun flower</p>
+     <hr>
+
+    <!-- ATTRIBUTE|="VALUE" -->
+     <P class="t1">Dharani</P>
+     <P class="-t1">Shamitha</P>
+     <P class="t1-">Fenchi</P>
+     <P class="t2">Snowfa</P>
+     <P class=" t1">Bhavana</P>
+     <hr>
+
+     <!-- ATTRIBUTE ^="VALUE" -->
+      <P class="cls">Aravindh</P>
+      <P class="cls ">Akash</P>
+      <P class=" cls ">Adith</P>
+      <P class=" cls">Amul</P>
+      <P class="class">Ashok</P>
+       <hr>
+
+    <!-- ATTRIBUTE$="VALUE" -->
+     <p id="demoo ">Krishaveni</p>
+     <p id="demoo">Dhanya</p>
+     <p id=" demoo">Shree</p>
+     <p id="demo1">Kokila</p>
+     <p id="-demo">Vanitha</p>
+     <hr>
+    <!-- ATTRIBUTE * ="VALUE" -->
+     <p id=" para ">Dog</p>
+     <p id="paa">Cat</p>
+     <p id="para-">Lion</p>
+     <p id="para@">Tiger</p>
+     <p id="graph-paragraph">Deer</p>
+
+</body>
+</html>
