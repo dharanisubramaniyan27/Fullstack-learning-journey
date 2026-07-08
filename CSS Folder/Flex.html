@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        #parent{
+            height: 530px;
+            width: 1000px;
+            border:2px solid black;
+            display:flex;
+
+            flex-direction: row;
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+
+            flex-wrap: nowrap;
+            flex-wrap:wrap;
+            flex-wrap: wrap-reverse;
+
+            flex-flow: row wrap;
+            flex-flow: row-reverse nowrap;
+            flex-flow:wrap-reverse column;
+            flex-flow: row-reverse wrap;
+            flex-flow: row wrap;
+
+            justify-content: flex-start;
+            justify-content:center;
+            justify-content: flex-end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+
+            align-items:start;
+            align-items: center;
+            align-items: flex-end;
+            align-items:start;
+     
+        }
+
+        .cls{
+            height:60px;
+            width:60px;
+            border:2px solid black;
+        }
+
+        #id1{
+            background-color:deeppink;
+            order: 3;
+            flex-grow: 90;
+            flex-shrink:120;
+            align-self: center;
+        }
+        #id2{
+            background-color:maroon;
+            order: 4;
+            flex-grow: 50;
+            flex-shrink:90;
+        }
+        #id3{
+            background-color:darkorchid;
+            order: 1;
+            flex-grow:120;
+            flex-shrink: 190;
+            align-self:flex-end;
+        }
+        #id4{
+            background-color:gold;
+            order: 2;
+            flex-grow: 70;
+            flex-shrink:45;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="id1" class="cls">Child1</div>
+        <div id="id2" class="cls">Child2</div>
+        <div id="id3" class="cls">Child3</div>
+        <div id="id4" class="cls">Child4</div>
+        <div id="id1" class="cls">Child1</div>
+        <div id="id2" class="cls">Child2</div>
+        <div id="id3" class="cls">Child3</div>
+        <div id="id4" class="cls">Child4</div>
+        <div id="id1" class="cls">Child1</div>
+        <div id="id2" class="cls">Child2</div>
+    </div>
+</body>
+</html>

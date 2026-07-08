@@ -1,0 +1,91 @@
+<!-- 30.06.26 GRADIANT PROPERTY CODE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+
+    <style>
+        #div1{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-image: linear-gradient(to bottom right, deeppink, darkblue, greenyellow, darkred) ;
+        }
+
+        #div2{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-image: linear-gradient(to bottom left,red 10%,yellow 40%, green 60%,blue 70%) ;
+            margin-left: 65px;
+        }
+
+        #div3{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-image: radial-gradient(red,yellow, green,blue,pink,black,greenyellow,darkblue,lightblue) ;
+        }
+
+        #div4{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-image: radial-gradient(red 20%,black 10%,greenyellow 20%,darkblue 10%,lightblue 20%,yellow 30%,orange 20%,green 20%,white 10%,black 90%) ;
+        }
+
+        #div5{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-image: conic-gradient(red 30deg,yellow, green,blue,pink 30deg,black,greenyellow 20deg,darkblue,lightblue) ;
+        }
+
+        #div6{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-image: conic-gradient(red ,yellow, green,blue 30deg 10deg,pink,black 10deg 20deg,greenyellow,darkblue,lightblue) ;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GRADIENT PROPERTY -->
+
+    <!-- LINEAR GRADIENT  -->
+
+    <div id="div1"></div>
+    <hr>
+
+    <!-- REPEATIN LINEAR GRADIENT  -->
+
+    <div id="div2"></div>
+    <hr>
+
+    <!-- RADIAL GRADIENT  -->
+
+    <div id="div3"></div>
+
+    <hr>
+
+    <!-- REPEAT RADIAL GRADIENT  -->
+
+    <div id="div4"></div>
+
+    <hr>
+
+    <!-- CONIC GRADIENT  -->
+
+    <div id="div5"></div>
+
+    <hr>
+
+    <!-- REPEAT CONIC GRADIENT  -->
+
+    <div id="div6"></div>
+
+</body>
+</html>
