@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            height:100px;
+            width:100px;
+            border:2px solid black;
+            background-color:maroon;
+            animation-duration:3s;
+            animation-delay:1s;
+            animation-name:Dinga;
+            animation-iteration-count:5;
+            animation-timing-function:ease-in;
+            animation-play-state:paused;
+        }
+        #demo:hover{
+            height:100px;
+            width:100px;
+            border:2px solid black;
+            background-color:maroon;
+            animation-duration:3s;
+            animation-delay:1s;
+            animation-name:Dinga;
+            animation-iteration-count:5;
+            animation-timing-function:ease-in;
+            animation-play-state:running;
+        }
+        @keyframes Dinga{
+            from{
+            height:40px;
+            width:40px;
+            border:3px dotted gold;
+            border-radius:30%; 
+               
+        }
+        to{
+            height:150px;
+            width:150px;
+            background-color: aqua;
+            border:2px solid black;
+            border-radius:50%;
+            transform: translatex(400px); 
+        }
+        }
+
+        #demo1{
+            height:60px;
+            width:60px;
+            background-color:darkred;
+            border:2px solid yellow;
+            animation-duration:3s;
+            animation-delay:1s;
+            animation-name:dingi;
+            animation-iteration-count:4;
+            animation-timing-function:ease-in;
+            animation-play-state:paused;
+        }
+         #demo1:hover{
+            height:60px;
+            width:60px;
+            background-color:darkred;
+            border:2px solid yellow;
+            animation-duration:3s;
+            animation-delay:1s;
+            animation-name:dingi;
+            animation-iteration-count:4;
+            animation-timing-function:ease-in;
+            animation-play-state:running;
+        }
+        @keyframes dingi{
+            0%{
+                height:50px;
+                width:50px;
+                background-color:deeppink;
+                border:2px solid black;
+                border-radius:15%;
+                transform:translateX(400px);
+            }
+            20%{
+                height:70px;
+                width:70px;
+                background-color:aqua;
+                border:2px solid black;
+                border-radius:35%;
+            }
+            40%{
+                height:10px;
+                width:100px;
+                background-color:deeppink;
+                border:2px solid black;
+                border-radius:45%;
+            }
+            80%{
+                height:150px;
+                width:150px;
+                background-color:gold;
+                border:2px solid black;
+                border-radius:45%;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="demo"></div>
+
+    <div id="demo1"></div>
+</body>
+</html>

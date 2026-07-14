@@ -9,18 +9,49 @@
             height: 550px;
             width: 650px;
             border:2px solid black;
+            display: grid;
+            grid-template-rows: 70px 70px;
+            grid-template-columns: 70px 70px;
+            /* grid-template: 70px 70px / 70px 70px;
+            grid-row-gap:40px;
+            grid-column-gap: 30px;
+            grid-gap:20px; */
+            /* justify-content:start;
+            justify-content: center;
+            justify-content:end;
+            justify-items:start;
+            justify-items: center;
+            justify-items:end; */
+            /* align-content:start;
+            align-content: center;
+            align-content:end;
+            align-items:start;
+            align-items: center;
+            align-items: end; */
+
         }
         #child1{
             background-color:red;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-row:2/4;
+            align-self: start;
         }
         #child2{
             background-color:yellow;
+            grid-column-start:1;
+            grid-column-end:4;
+            grid-column: 1/4;
+            align-self: center;
         }
         #child3{
-            background-color:blue;
+            background-color:aqua;
+            align-self: center;
         }
         #child4{
             background-color:deeppink;
+            align-self: end;
+
         }
     </style>
 </head>
