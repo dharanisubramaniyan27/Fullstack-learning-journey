@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        #parent>#d1{
+            height:40px;
+            width:500px;
+            border:1px solid gray;
+            display:flex;
+
+        }
+        #All{
+            height:20px;
+            width:100px;
+            border:1px solid black;
+            border-radius:20px;
+            position: relative;
+            top:8px;
+            left:8px;
+        }
+        #Hide{
+            position:relative;
+            top:8px;
+            left:20px;
+        }
+        #Shuffle{
+            height:20px;
+            width:60px;
+            border:1px solid black;
+            border-radius:20px;
+            position:relative;
+            top:8px;
+            left:230px;
+            padding:2px;
+
+        }
+        #parent #d2{
+            position: relative;
+            top: 10px;
+            height:40px;
+            width:500px;
+            border:1px solid gray;
+
+        }
+        #parent{
+            height:460px;
+            width:500px;
+            border:1px solid black;
+            margin:80px;
+            position: relative;
+            top:30px;
+        }
+        .card{
+            height:300px;
+            width: 460px;
+            background-color:plum;
+            margin:20px;
+            border:2px solid gray;
+            display: flex;
+            align-items:center;
+            border-radius:10px;
+            text-align:center;
+        }
+        #ik{
+            width: 80px;
+            height:30px;
+            background-color:yellow;
+            color:black;
+            border-radius:20px;
+            position:relative;
+            top:1px;
+            left:160px;
+            box-shadow:0.5px 0.5px 1px 0.3px black;
+        }
+        #rp{
+            width: 130px;
+            height:30px;
+            background-color:white;
+            color:black;
+            border-radius:20px;
+            position:relative;
+            top:1px;
+            left:170px;
+            box-shadow:0.5px 0.5px 1px 0.3px black;
+        }
+        #p{
+            width: 80px;
+            height:30px;
+            background-color:white;
+            color:black;
+            border-radius:20px;
+            position:relative;
+            top:2px;
+            left:15px;
+        }
+        #n{
+            width: 80px;
+            height:30px;
+            background-color:white;
+            color:black;
+            border-radius:20px;
+            position:relative;
+            top:2px;
+            left:320px;
+        }
+
+        .cls{
+            height:380px;
+            width:200px;
+            border:1px solid black;
+            border-radius: 10px;
+            position:absolute;
+            top:150px;
+            left:600px;
+        }
+        .cls>h3{
+            margin:5px;
+        }
+
+        #a1{
+            height:70px;
+            width:180px;
+            border:1px solid black;
+            border-radius:10px;
+            margin:10px;
+            padding:10px;
+        }
+        #a2{
+            height:70px;
+            width:180px;
+            border:1px solid black;
+            border-radius:10px;
+            margin:10px;
+             padding:10px;
+        }
+        #a3{
+            height:70px;
+            width:180px;
+            border:1px solid black;
+            border-radius:10px;
+            margin:10px;
+             padding:10px;
+        }
+        #a4{
+            height:70px;
+            width:180px;
+            border:1px solid black;
+            border-radius:10px;
+            margin:10px;
+             padding:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="d1">
+            <div id="All">All Categories</div>
+            <div id="Hide">Hide Mastered</div>
+            <div id="Shuffle">Shuffle</div>
+        </div>
+    <div class="card">
+        <div class="content">
+        <h1 id="id2">What does HTML stands for?</h1> 
+        <h3 id="id3">Click to reveal answer</h3>
+        </div>
+        <div id="empty"></div>
+    </div>
+      <button id="ik"> I know This</button>
+      <button id="rp"> Reset Progress</button>
+    <div id="d2"> 
+        <button id="p">
+             < previous
+        </button>
+        <button id="n">
+            Next >
+        </button>
+    </div>
+    </div>
+    <div class="cls">
+        <h3>Study Statistics</h3> <br> 
+        <div id="a1">
+            <p>Total Cards</p> 
+            <h1>40</h1>
+        </div>
+        <div id="a2">
+            <p>Mastered</p>
+            <h1>11</h1>
+        </div>
+        <div id="a3">
+            <p>In Progress</p>
+            <h1>21</h1>
+        </div>
+        <div id="a4">
+            <p>Not Started</p>
+            <h1>8</h1>
+        </div>
+    </div>
+</body>
+</html>
