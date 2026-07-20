@@ -11,9 +11,6 @@
             box-sizing:border-box;
         }
         #parent>#d1{
-            height:40px;
-            width:500px;
-            border:1px solid gray;
             display:flex;
 
         }
@@ -21,7 +18,7 @@
             height:20px;
             width:100px;
             border:1px solid black;
-            border-radius:20px;
+            border-radius:10px;
             position: relative;
             top:8px;
             left:8px;
@@ -44,30 +41,42 @@
         }
         #parent #d2{
             position: relative;
-            top: 10px;
-            height:40px;
-            width:500px;
-            border:1px solid gray;
-
+            bottom:0px;
         }
         #parent{
-            height:460px;
+            height:440px;
             width:500px;
             border:1px solid black;
             margin:80px;
             position: relative;
             top:30px;
+            border-radius:10px;
+            box-shadow:1px 1px 1px 1px gray;
         }
         .card{
             height:300px;
             width: 460px;
             background-color:plum;
-            margin:20px;
+            margin:15px;
             border:2px solid gray;
+            border-radius:10px;
+
             display: flex;
             align-items:center;
-            border-radius:10px;
-            text-align:center;
+            justify-content:center;
+        }
+        .content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            width:100%;
+        }
+        #id2{
+            white-space: nowrap;
+            font-size:30px;
+            text-align: center;
+            margin-left:10px;
         }
         #ik{
             width: 80px;
@@ -76,8 +85,8 @@
             color:black;
             border-radius:20px;
             position:relative;
-            top:1px;
-            left:160px;
+            bottom: 8px;
+            left:150px;
             box-shadow:0.5px 0.5px 1px 0.3px black;
         }
         #rp{
@@ -87,7 +96,7 @@
             color:black;
             border-radius:20px;
             position:relative;
-            top:1px;
+            bottom:8px;
             left:170px;
             box-shadow:0.5px 0.5px 1px 0.3px black;
         }
@@ -111,7 +120,16 @@
             top:2px;
             left:320px;
         }
-
+        #emptybox{
+            height:6px;
+            width:110px;
+            border:1px solid black;
+            position:absolute;
+            top:340px;
+            left:190px;
+            background-color: white;
+            border-radius:20px;
+        }
         .cls{
             height:380px;
             width:200px;
@@ -120,11 +138,18 @@
             position:absolute;
             top:150px;
             left:600px;
+            box-shadow:1px 1px 1px 1px gray;
         }
         .cls>h3{
             margin:5px;
         }
-
+        .cls .divider{
+            height:68px;
+            width: 0px;
+            position: relative;
+            bottom:65px;
+            left:105px;
+        }
         #a1{
             height:70px;
             width:180px;
@@ -132,6 +157,8 @@
             border-radius:10px;
             margin:10px;
             padding:10px;
+            background: linear-gradient(to right, white 0%, white 65%,
+            orange 48%, orange 100%);
         }
         #a2{
             height:70px;
@@ -139,7 +166,9 @@
             border:1px solid black;
             border-radius:10px;
             margin:10px;
-             padding:10px;
+            padding:10px;
+            background: linear-gradient(to right, white 0%, white 65%,
+rgb(240, 65, 158) 48%, rgb(240, 61, 156) 100%);
         }
         #a3{
             height:70px;
@@ -147,7 +176,9 @@
             border:1px solid black;
             border-radius:10px;
             margin:10px;
-             padding:10px;
+            padding:10px;
+            background: linear-gradient(to right, white 0%, white 65%,
+            rgb(45, 204, 45) 48%, rgb(45, 204, 45) 100%);
         }
         #a4{
             height:70px;
@@ -155,7 +186,10 @@
             border:1px solid black;
             border-radius:10px;
             margin:10px;
-             padding:10px;
+            padding:10px;
+            background: linear-gradient(to right, white 0%, white 65%,
+rgb(26, 196, 252) 48%, rgb(26, 196, 252) 100%);
+            
         }
 
     </style>
@@ -167,15 +201,18 @@
             <div id="Hide">Hide Mastered</div>
             <div id="Shuffle">Shuffle</div>
         </div>
+        <br>
+        <hr>
     <div class="card">
         <div class="content">
-        <h1 id="id2">What does HTML stands for?</h1> 
+        <h1 id="id2">What does HTML stand for?</h1> 
         <h3 id="id3">Click to reveal answer</h3>
-        </div>
-        <div id="empty"></div>
+    </div>
+        <div id="emptybox"></div>
     </div>
       <button id="ik"> I know This</button>
-      <button id="rp"> Reset Progress</button>
+      <button id="rp"> Reset Progress</button> 
+      <hr>
     <div id="d2"> 
         <button id="p">
              < previous
@@ -185,23 +222,34 @@
         </button>
     </div>
     </div>
+
+
+
     <div class="cls">
         <h3>Study Statistics</h3> <br> 
         <div id="a1">
             <p>Total Cards</p> 
             <h1>40</h1>
+            <hr class="divider">
+            <div id="orange"></div>
         </div>
         <div id="a2">
             <p>Mastered</p>
             <h1>11</h1>
+            <hr class="divider">
+            <div id="red"></div>
         </div>
         <div id="a3">
             <p>In Progress</p>
             <h1>21</h1>
+            <hr class="divider">
+            <div id="pink"></div>
         </div>
         <div id="a4">
             <p>Not Started</p>
             <h1>8</h1>
+            <hr class="divider">
+            <div id="green"></div>
         </div>
     </div>
 </body>
