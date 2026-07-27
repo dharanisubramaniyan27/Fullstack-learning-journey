@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Makeup collections</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        #navbar{
+            height:100px;
+            width:100%;
+            background-color:#3B0A45;
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            position: sticky;
+        }
+        #logo{
+            height:90px;
+            width:220px;
+            padding:1px 8px;
+        }
+        #nav ul{
+            display:flex;
+            gap:30px;
+            list-style-type:none;
+        }
+        #nav ul li{
+            color:#D4AF37;
+            font-size: 25px; 
+            transition:0.3s;
+        }
+        #nav ul li:hover{
+            color:white;
+            cursor: pointer;
+            transform:scale(1.15);
+        }
+        #navbar .anchor{
+            text-decoration: none;
+            color:white;
+        }
+        .anchor:hover{
+            color:white;
+        }
+        #navbar #search{
+            height:30px;
+            width:200px;
+            display: flex;
+            align-items: center;
+            background-color:white;
+            border-radius:10px;
+            padding:5px 6px;
+        }
+        #search input{
+            border:none;
+            outline:none;
+        }
+        #navbar #search i:hover{
+            color:#D4AF37;
+            transform: scale(1.1);
+        }
+        #navbar #bag i{
+            text-decoration: none;
+            color:#D4AF37;
+            font-size: 25px; 
+        }
+        #navbar #bag i:hover{
+            color:white;
+            transform: scale(1.1);
+        }
+
+
+        .eyes #topimg{
+            width: 100%;
+            height: 400px;
+            transition: 0.3s;
+            animation: float;
+            animation-duration:3s;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-10px);
+            }
+            100%{
+                transform: translateY(2px);
+            }
+        }
+
+        .stock{
+            margin:30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            row-gap:60px;
+            column-gap:150px;
+        }
+        .card{
+            background-color:lavender;
+            width:300px;
+            padding:10px;
+            border-radius:15px;
+            box-shadow:0 8px 20px rgba(0, 0, 0, 0.234);
+            text-align: center;
+            transition:0.3s;
+        }
+        .card:hover{
+            width:300px;
+            padding:10px;
+            border-radius:15px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.15);
+            text-align: center;
+            transform:translateY(-10px);
+            box-shadow:0 12px 25px rgba(0, 0, 0, 0.508);;
+        }
+        .card img{
+            width:100%;
+            height:300px;
+            border-radius:2px;
+        }
+        .card h3{
+            text-transform:uppercase;
+            font-size: 18px;
+            color: #3B0A45;
+            margin-top: 15px;
+        }
+        .rating{
+            color: #D4AF37;
+            font-size: 18px;
+            margin: 10px;
+        }
+        .price{
+            font-size: 20px;
+            font-weight: bold;
+            color: #7A1F7A;
+            margin-bottom: 15px;
+        }
+        .button{
+            font-size:15px;
+            font-weight:bold;
+            height:50px;
+            width:200px;
+            padding:10px;
+            color:darkgoldenrod;
+            background-color:purple;
+            cursor: pointer;
+            border-radius:10px;
+            transition: 0.3s;
+        }
+        .button:hover{
+            padding:10px;
+            color: black;
+            background-color:plum;
+            cursor: pointer;
+            transform: scale(1.09);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <!-- NAVBAR -->
+     <div id="navbar">
+        <img src="./Logo.png" alt="" id="logo">
+        <div id="nav">
+        <ul>
+            <a href="./index.html" class="anchor"><li>Home</li></a>
+            <a href="./shop.html" class="anchor"><li>Shop</li></a>
+            <a href="./index.html" class="anchor"><li>Categories</li></a>
+            <a href="./index.html" class="anchor"><li>About</li></a>
+            <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i></a>
+            <input type="text" placeholder=" Search products">
+            </div>
+            <div id="bag">
+            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </ul>
+        </div>
+    </div>
+
+    <!-- EYES MAKEUP COLLECTION -->
+    <div class="eyes"> 
+    <img src="https://www.sugarcosmetics.com/cdn/shop/collections/Eyes-1600x400-withCTA.jpg?v=1733394028&width=1600" id="topimg">
+
+    <div class="stock">
+        <div class="card">
+            <img src="https://www.sugarcosmetics.com/cdn/shop/files/Stroke-Of-Genius-Heavy-Duty-Kohl-2_61565e0f.jpg?v=1762425629&width=500" alt="">
+            <h3>Stroke of genius heavy duty kohl</h3>
+            <div class="rating">
+                ★★★☆☆
+            </div>
+            <p class="price">RS.549.00</p>
+            <button class="button">Add to Bag</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.sugarcosmetics.com/cdn/shop/files/Blend-The-Rules-Eyeshadow-Palette-2_5fb4d48d.jpg?v=1743677305&width=600" alt="">
+            <h3>Blend the rules eyeshawdow palette</h3>
+            <div class="rating">
+                ★★★★☆
+            </div>
+            <p class="price">RS.625.00</p>
+            <button class="button">Add to Bag</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.sugarcosmetics.com/cdn/shop/files/Eye-Warned-You-So-Double-Matte-Eyeliner-2.jpg?v=1743677521&width=500" alt="">
+            <h3>Eye warned you so! <br> Double matte eyeliner</h3>
+            <div class="rating">
+                ★★★★★
+            </div>
+            <p class="price">RS.749.00 <s style="color: gray;">Rs.900.00</s></p>
+            <button class="button">Add to Bag</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3VsGhvu6D1Uq3pa1bas0y8XKBaWq1vvZuyF3IvDr_g&s" alt="">
+            <h3>Kohl-of-honour-intense-kajal</h3>
+            <div class="rating">
+                ★★★★★
+            </div>
+            <p class="price">RS.733.00 <s style="color: gray;">Rs.770.00</s></p>
+            <button class="button">Add to Bag</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.sugarcosmetics.com/cdn/shop/files/Blacklash-Volumizing-Mascara-01-Black-Up-Kit.jpg?v=1784809476&width=500" alt="">
+            <h3>Blacklash-volumizing-Masacra black</h3>
+            <div class="rating">
+                ★★★☆☆
+            </div>
+            <p class="price">RS.999.00</p>
+            <button class="button">Add to Bag</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.sugarcosmetics.com/cdn/shop/files/Arch-Arrival-Brow-Definer-2.jpg?v=1743676637&width=500" alt="">
+            <h3>Arch-arrival-brow-definer</h3>
+            <div class="rating">
+                ★★★★☆
+            </div>
+            <p class="price">RS.749.00 <s style="color: gray;">Rs.890.00</s></p>
+            <button class="button">Add to Bag</button>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>

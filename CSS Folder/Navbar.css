@@ -7,7 +7,7 @@
     height:80px;
     width:100%;
     /* border:2px solid black; */
-    background-color: rgba(254, 155, 218, 0.384);
+    background-color: #fe9bda62;
 }
 #parent>ul{
     display:flex;

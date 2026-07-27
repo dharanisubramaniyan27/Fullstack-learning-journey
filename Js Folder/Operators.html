@@ -31,6 +31,55 @@
         console.log(n==m)
         console.log(n!=m)
         console.log(n<=m)
+
+        //LOGICAL OPERATOR
+
+        //AND(&&)
+        let p=80;
+        let q=30;
+        let c=q>p;
+        let d=p!=q;
+        console.log(p>q&&q>p)
+        console.log(p>q&&q<p)
+        console.log(p==q&&p>q)
+        console.log(p>q&&q<p)
+        console.log(c&&d)
+
+        //OR(||)
+        p=45;
+        q=70;
+        console.log(p>q||q>p)
+        console.log(p<q||q>p)
+        console.log(p==q||q<p)
+        console.log(p!=q||p>q)
+
+        //NOT(!)
+        p=80
+        q=30
+        console.log(!(p>q)||q>p)
+        console.log(p>q||q>p)
+        console.log(p<q&&q<p)
+        console.log(!(p<q)&&q<p)
+
+        //ASSIGNMENT
+        let m=100;
+        let v=50;
+        console.log(u=u+v)
+        console.log(u+=v)
+        console.log(u=u-v)
+        console.log(u-=v)
+        console.log(u=u*v)
+        console.log(u*=v)
+        
+        //TERNARY
+        
+        //SYNTAX -> CONDITION?VAL1:VAL2
+        let x=200
+        let y=100
+        let big=x>y?x:y
+        console.log(big)
+        let small=x<y?x:y
+        console.log(small)
     </script>
 </body>
 </html>

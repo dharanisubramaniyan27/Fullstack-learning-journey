@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //VAR
+        {
+            var a; //DECLARATION
+            a=10; //INITALIZATION
+            console.log(a)
+
+            var a; //RE-DECLARATION
+            a=20; //RE-INITALIZATION
+            console.log(a)
+
+            var a=30; // R.D AND R.I
+            console.log(a)
+        } console.log(a)
+
+        //LET
+        {
+            let m; //DECALARATION
+            m=100; //INTIALIZATION
+            console.log(m)
+
+            // let b; //R.D
+            m=150; //RE-INITALIZATION
+            console.log(m)
+
+            // let b=200; // R.D AND R.I which is not possible
+            m=200;
+            console.log(m)
+        } 
+        // console.log(m) which is not possible
+
+        //CONST
+        { 
+            //const x; // DECLARATION not possible
+            //x=200; // INTIALIZATION not possible
+
+            const x=200; // DECLARATION AND INITALIZATION WITHIN THE SAME LINE
+            console.log(x)
+            
+        }
+        // console.log(X) which is not possible
+
+
+        //HOISTING IN JS
+
+        //VAR...
+        var b=300;
+        console.log(b)
+
+        console.log(c)
+        var c=350; //undefined as output
+
+        //LET...
+        let n=500;
+        console.log(n)
+
+        // console.log(p)
+        // let p=400; //error
+
+        //CONST...
+        const y=600;
+        console.log(y)
+
+        // console.log(u)
+        // const u=150; //error
+    </script>
+</body>
+</html>
