@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //IIFE
+        (function(){
+            console.log("I am IIFE function")
+        })();
+        (function(){
+            console.log("Bye bye Guys")
+        })();
+
+        
+        //NAMED FUCNTION
+                function Raja(){
+                    console.log("I am Raja")
+                }
+                Raja()
+
+                function Rani(){
+                    console.log("I am Rani")
+                }
+                Rani()
+
+                //ADDITION
+                function add(a,b){
+                    return a+b;
+                }
+                console.log(add(10,20))
+                //or
+                let a=add(40,60)
+                console.log(a)
+
+                //SUBTRACTION
+                function sub(a,b){
+                    return a-b;
+                }
+                console.log(sub(100,50)) //or
+                let b=sub(90,45)
+                console.log(b)
+
+                //MULTIPLICATION
+                function multiply(a,b){
+                    return a*b;
+                }
+                console.log(multiply(5,6)) //or
+                let c=multiply(12,12)
+                console.log(c)
+
+                //DIVSION
+                function divide(a,b){
+                    return a/b;
+                }
+                console.log(divide(10,2)) //or
+                let d= divide(20,5)
+                console.log(d)
+
+        //FUNCTION EXPRESSION
+        let m=function chintu(){
+            console.log("I am chintu")
+        }
+        m()
+
+        let e=function mintu(){
+            console.log("I am mintu")
+        }
+        e()
+
+        //ANONYMOUS FUCNTION
+        let f=function(){
+            console.log("I am anonymous fucntion")
+        }
+        f()
+
+        let g=function(){
+            console.log("Hello Guys")
+        }
+        g()
+
+        //NESTED FUNCTION
+        function parent(){
+            console.log("I am parent")
+            function child(){
+                console.log("I am child")
+            }
+            child()
+        }
+        parent()
+
+        function Dinga(){
+            console.log("I am Dinga")
+            function minnu(){
+                console.log("I am minnu")
+            }
+            minnu()
+            function chinnu(){
+                console.log("Hello Chinnu")
+            }
+            chinnu()
+        }
+        Dinga()
+    
+        //CALLBACK FUNCTION
+        function mintu(a){
+            console.log(a)
+        }
+        mintu(20)
+
+        //passing arugument as function
+        function callback(a){
+            console.log("I am callback Function")
+            a();
+        }
+        callback(function chitti(){
+            console.log("I am good person")
+        })
+
+        //passing two arguments as function
+        function van(a,b){
+            console.log("I am good guys")
+            a();
+            b();
+        }van(function bus(){
+            console.log("Bus")
+        },function car(){
+            console.log("Car")
+        })
+
+        //HIGHER ORDER FUNCTION
+        function bunny(c){
+            return c+500;
+        }
+        function sunny(a){
+            let result=a(200)
+            console.log(result)
+        }
+        sunny(bunny)
+
+
+
+    </script>
+</body>
+</html>
