@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script> 
+    //STRING
+    //Single Quotes
+    let a='Hello World'
+    console.log(a);
+
+    //Double Quotes
+    let b="Hello World"
+    console.log(b);
+
+    let c="Afternoon"
+    console.log("Good");
+    console.log("Good" +c);
+
+    //Template Literals
+    console.log("Good");
+    console.log(`Good ${c}`);
+    console.log(`Good "Morning"`);
+
+    let name="Subramaniyan"
+    let age=27
+    let city="Ariyalur"
+    console.log(`My name is ${name} and I am ${age}yrs old and I belongs to city ${city}`);
+
+    //STRING METHOD
+    let str="Dharani is a Software Developer"
+    console.log(str);
+
+    //length-> it is used to provide the entrie lenght of the string
+    console.log(str.length);
+
+    //concat-> it is used to add a new string value to the existed string value
+    console.log(str.concat(" As well as good person"));
+
+    //replace-> it is used to replace the existed string value with new value where we have to provide the new value
+    console.log(str.replace("Software", "Java Fullstack"));
+
+    //touppercase -> it is used to convert the entire uppercase format
+    console.log(str.toUpperCase());
+    
+    //tolowercase -> it is used to convert the entire lowercase format
+    console.log(str.toLowerCase());
+
+    //slice -> it is used to extract a part from the string separately...where we have to provide the start and end values
+    console.log(str.slice(0,7));
+
+    //indexof -> it is used to provide index value separately from the entire string...where we have to provide particular character as input
+    console.log(str.indexOf("S"));
+
+    //lastindexof -> it is used to provide the index value from the entire string but where it will provide the index value of the character which is present at last
+    console.log(str.indexOf("e"));
+    console.log(str.lastIndexOf("e"));
+
+    //trimStart-> it is used to remove the empty space at the beginning of the string
+    string="  I am a good person"
+    console.log(string.trimStart());
+    
+    //trimEnd -> it is used to remove the empty space at the endning of the string
+    console.log(string.trimEnd());
+
+    //repeat -> it is used to repeat the string value multiple times where it is imp to provide an integer value
+    console.log(str.repeat(3));
+
+    //includes -> it will check whether the particular character is present or not if it is present it will return true or else false
+    console.log(str.includes("X"));
+    console.log(str.includes("D"));
+
+    //match-> it will check whether the particular character is present or not if it is present it will provide some information or else NULL
+    console.log(str.match("D"));
+    console.log(str.match("V"));
+    console.log(str.match("e"));
+
+    //charat -> it is used to provide the character from the entire string separately but where we have to provide index value as input
+    console.log(str.charAt(0));
+    console.log(str.charAt(3));
+
+    //charcodeat -> it is used to provide the ASCII values  for the particular character where we need to provide index value as input (A-65 and a-97)
+    console.log(str.charCodeAt(0));
+    console.log(str.charCodeAt(3));
+
+    //padstart-> it is used to add a new value at the beginning of the string..where it is imp to provide length and fullfill string
+    let m="Raj"
+    console.log(m.padStart(12,"Ram"));
+
+    //padend-> it is used to add a new value at the ending of the string..where it is imp to provide length and fullfill string
+    let n="sita"
+    console.log(n.padEnd(13,"Raman"));
+
+    </script>
+
+</body>
+</html>
