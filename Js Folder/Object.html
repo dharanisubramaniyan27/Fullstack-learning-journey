@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //CREATING AN OBJECT BY USING CONSTRUCTOR WAY...
+    let obj=new Object()
+    obj.name="Raja"
+    obj.age=25
+    obj.city="Chennai"
+    console.log(obj);
+
+    //CREATING AN OBJECT BY USING LITERAL WAY...
+    let person = { 
+        name:"Varun",
+        age:20,
+        city:"Keralam"
+    }
+    console.log(person);
+
+    //INORDER TO GET SINGLE VALUE FROM THE OBJECT WE SHOULD USE "DOT NOTATION" W.R.T "KEY"
+    console.log(person.name);
+    console.log(person.city);
+
+    //INOERDER TO ADD SINGLE VALUE FROM THE OBJECT WE SHOULD USE "DOT NOTATION" W.R.T "KEY"
+    person.country="INDIA"
+    console.log(person);
+
+    person.food="Sambar Rice"
+    console.log(person);
+
+    //NESTED OBJECT
+    let object1={
+        name:"Prasanna",
+        age:45,
+        address:{
+            state:"AP",
+            Pincode:546734
+        },
+        Country:"India",
+        food:{
+            Rice:"Sambar Sadam",
+            Icecream:"Vanilla"
+        },
+        Color:"Blue"
+    }
+    console.log(object1);
+    console.log(object1.name);
+    console.log(object1.address.state);
+    console.log(object1.food.Rice);
+    console.log(object1.Color);
+
+    let object2={
+        name:"Kumar",
+        Color:"Yellow",
+        skills:["Html","css","Js"],
+        Country:"India",
+        obj3:{
+            name:"Arepalli",
+            city:"Kochi",
+            Food:"Briyani"
+        },
+        Games:["Football","Volleyball","Kabaddi"]
+    }
+    console.log(object2.name);
+    console.log(object2.skills[1]);
+    console.log(object2.obj3.name);
+    console.log(object2.obj3.Food);
+    console.log(object2.Games[2]);
+
+    //OBJECT METHODS
+    let object4={
+        name:"Sai",
+        age:25,
+        city:"Mumbai"
+    }
+    console.log(object4);
+
+    //KEYS-> Itis used to return all the keys separately from the entire object in the form of array..
+    console.log(Object.keys(object4));
+
+    //VALUES-->It is used to return all the values separately from the entire object in the form of array...
+    console.log(Object.values(object4));
+
+    </script>
+</body>
+</html>

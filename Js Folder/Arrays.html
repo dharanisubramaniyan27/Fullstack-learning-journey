@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ARRAY -->
+     <script>
+
+        //HOMOGENOUS ARRAY
+        let arr = [23, 34, 45, 66, 78, 90]
+        console.log(arr);
+
+        //INOEDER OF GET SINGLE ---INDEX VALUE
+        console.log(arr);
+        console.log(arr[0]);
+        console.log(arr[2]);
+        console.log(arr[4]);
+
+        //HETEROGENOUS
+        let names=["Raja", 23, "Chintu", 6n]
+        console.log(names);
+
+        //INORDER TO ADD SINGLE VALUES ---INDEX VALUE
+        names[4]="BUJII"
+        console.log(names);
+
+        names[7]="Minnu"
+        console.log(names);
+
+        console.log(names[5]);
+        console.log(names[7]);
+        console.log(names[9]);
+
+        //INORDER TO DELETE AN VALUE
+        console.log(names);
+
+        delete names[1]
+        console.log(names);
+
+        delete names[3]
+        console.log(names);
+
+        //NESTED ARRAY
+        let fruits=["Apple",["Banana","Carrot"],"Mango",["Watermelon"],"PineApple","Grapes"]
+        console.log(fruits);
+        console.log(fruits[0]);
+        console.log(fruits[1]);
+        console.log(fruits[1][1]);
+        console.log(fruits[3]);
+        console.log(fruits[3][0]);
+        console.log(fruits[5]);
+
+        let num=[10,20,[30,40],50,60,[70,80],90,100]
+        console.log(num[1]);
+        console.log(num[2][1]);
+        console.log(num[4]);
+        console.log(num[5][1]);
+        console.log(num[7]);
+
+        //ARRAY METHODS
+        let name=["Avinash","Balaji","Gopi","Danesh","Eniyan"]
+        console.log(name);
+
+        //PUSH-> It is used to add an element or a value at the ending of the array
+        name.push("Ajay");
+        console.log(name);
+        name.push("Anish Kumar")
+        console.log(name);
+
+        //POP-> It is used to remove an element or a value the ending of the array
+        name.pop()
+        name.pop()
+        console.log(name);
+
+        //SHIFT->It is used to remove the element or a value from the beginning of the array
+        name.shift()
+        console.log(name);
+        name.shift()
+        console.log(name);
+
+        //UNSHIFT->It is used to add the element or a value from the beginning of the array
+        name.unshift("Akhilesh")
+        console.log(name);
+        name.unshift("Aromal")
+        console.log(name);
+
+        //SLICE->It is used to extract the single value or an element from the entire array but it will not affect the original array
+        let a = name.slice(0,2)
+        console.log(a);
+
+        console.log(name);
+
+        //SPLICE->It is also used to extract the single value or an element from the entire array where it will affect the original array
+        // let b=name.splice(0,2)
+        // console.log(b);
+
+        console.log(name);
+
+        //INDEXOF->It is used to provide the index value of an particular element where we need to provide input as element
+        let c=name.indexOf("Aromal")
+        console.log(c);
+
+        let d=name.indexOf("Gopi")
+        console.log(d);
+
+        console.log(name);
+
+        //AT->It is used to provide the element separately from the enitre array where we need to provide index value as an input
+        let e=name.at(3);
+        console.log(e);
+
+        let f=name.at(4);
+        console.log(f);
+
+        console.log(name);
+
+        //REVERSE->It is used to reverse the entire array
+        let g=name.reverse()
+        console.log(g);
+
+        console.log(name);
+
+        //JOIN->It is used to join two array elements where it is important to provide the value
+        let h=name.join(" is a good boy ")
+        console.log(h);
+
+        console.log(name);
+
+        //INCLUDES->It is used to check whether the element it present or not if it is present it will retuen true or else false
+        let i=name.includes("Varun")
+        console.log(i);
+
+        let j=name.includes("Danesh")
+        console.log(j);
+
+        console.log(name);
+     </script>
+</body>
+</html>
