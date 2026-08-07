@@ -81,11 +81,44 @@
     }
     console.log(object4);
 
-    //KEYS-> Itis used to return all the keys separately from the entire object in the form of array..
+    //KEYS-> It is used to return all the keys separately from the entire object in the form of array..
     console.log(Object.keys(object4));
 
     //VALUES-->It is used to return all the values separately from the entire object in the form of array...
     console.log(Object.values(object4));
+
+    //ENTRIES-->It is used to return both keys and values at a time in the form of array
+    console.log(Object.entries(object4));
+
+    //SEAL-->When the object is sealed we cannot modify the object with new values but then we can update the existing value inside the object
+
+    object4.country="India"
+    console.log(object4);
+
+    // console.log(Object.seal(object4));
+
+    object4.name="Ramesh"
+    console.log(object4);
+
+    object4.Food="Briyani"
+    console.log(object4);
+
+    //ISSEALED-->It will check whether the object is sealed or not, if it is sealed it will return true or else false
+    console.log(Object.isSealed(object4));
+
+    //FREEZE-->When the object is feeze we cannit modify the object with new value as well as cannot even update the existing values
+    console.log(Object.freeze(object4));
+
+    object4.fruit="Apple"
+    console.log(object4);
+
+    object4.color="Red"
+    console.log(object4);
+
+    //ISFROZEN-->It will check whether the object is freezed or not, if it is freezed it will return true or else false
+    console.log(Object.isFrozen(object4));
+
+
 
     </script>
 </body>

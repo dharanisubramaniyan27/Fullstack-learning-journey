@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ARRAY DESRUCTURING
+        let arr=[23,"Raja","Chintu","Bujji",10n]
+        console.log(arr);
+
+        // BY NORMAL WAY...INDEX VALUE
+        console.log(arr[0]);
+        console.log(arr[2]);
+        console.log(arr[4]);
+
+        let names=["Prasanna","Kumar","Arepalli","Web Tech"]
+        console.log(names);
+
+        //BY USING DESTRUCTURING..
+        let[a,b,c,d,e] = names
+        console.log(b);
+        console.log(c);
+        console.log(e);
+
+
+
+        //OBJECT DESTRUCTURING
+        let obj={
+            name:"Prabu",
+            age:22,
+            city:"Chennai",
+            Country:"India"
+        }
+        console.log(obj);
+
+        //BY NORMAL WAY...DOT NOTATION
+        console.log(obj.name);
+        console.log(obj.city);
+
+        let person={
+            name:"Subash",
+            age:20,
+            city:"Kerala",
+            country:"India",
+            FavColour:"White",
+            Degree:"BE"
+        }
+        console.log(person);
+
+        //BY USING DESTRUCTURING...
+        let{name,age,City,country,FavColour, Degree}=person
+
+        console.log(name);
+        console.log(City);
+        console.log(FavColour);
+        console.log(Degree);
+
+    </script>
+</body>
+</html>
