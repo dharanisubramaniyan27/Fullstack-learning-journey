@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //MAP IS AN ARRAY METHOD WHICH IS USED TO GET ALL THE VALUES SAPARATELY FROM THE ENTIRE ARRAY TOGETHER AT TIME, WHERE THE LINE NUMBER WILL BE SAME...WE WILL NOT USE ANY INDEX VALUE OR DESTRUCTURING CONCEPTS
+
+        let arr=[23,34,45,56,67,78,89]
+        console.log(arr);
+
+        //BY USING INDEX VALUE..
+        console.log(arr[0]);
+        console.log(arr[2]);
+        console.log(arr[4]);
+
+        //BY DESTUCTURING 
+        let[a,b,c,d,e,f]=arr
+        console.log(a);
+        console.log(c);
+        console.log(e);
+
+        //BY USING MAP METHOD
+        let names=["raja","bujji","chintu","mintu","bunny"]
+        console.log(names);
+
+        //SYNTAX--> VARIABLE.MAP((VAL)=>PRINT(VAL))
+        names.map((a)=>console.log(a));
+
+        let numbers=[1,2,3,4,5,6,7,8,9,0]
+        console.log(numbers);
+
+        numbers.map((a)=>console.log(a));
+
+    </script>
+</body>
+</html>

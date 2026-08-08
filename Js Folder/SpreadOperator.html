@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=[10,20]
+        console.log(arr1);
+
+        let arr2=[30,40]
+        console.log(arr2);
+
+        //BY NORMAL WAY..BY CREATING AN NEW ARRAY
+        let arr3=[10,20,30,40]
+        console.log(arr3);
+
+        let arr4=[50,60]
+        console.log(arr4);
+
+        //NEW ARRAY
+        let arr5=[10,20,30,40,50,60]
+        console.log(arr5);
+
+        //BY USING SPREAD OPERATOR
+        let names1=["Sai","Raju"]
+        console.log(names1);
+
+        let names2=[...names1, "Ragul","Rudhra"]
+        console.log(names2);
+
+        let names3=[...names2,"Raghu","Rajesh"]
+        console.log(names3);
+
+        //SPREAD OPERATOR BY USING OBJECT..
+        //WE USE THIS SPREAD OPERATOR WHICH IS USED TO EXPAND OR MERGE AN OBJECT WITHOUT CREATING AN NEW OBJECT
+
+        let obj1={
+            name:"Bujji",
+            age:4
+        }
+        console.log(obj1);
+
+        let obj2={
+            city:"AP",
+            Country:"India"
+        }
+        console.log(obj2);
+
+        //BY NORMAL WAY...CREATING AN NEW OBJECT
+        let obj3={
+            name:"Bujji",
+            age:4,
+            city:"Ap",
+            Country:"India"
+        }
+        console.log(obj3);
+
+        //BY USING SPREAD OPERATOR
+        let person1={
+            name:"Minnu",
+            age:7,
+        }
+        console.log(person1);
+
+        let person2={
+            ...person1,
+            city:"Kochi",
+            country:"India"
+        }
+        console.log(person2);
+
+        let person3={
+            ...person2,
+            food:"Briyani",
+            sweet:"Palkova"
+        }
+        console.log(person3);
+        
+
+    </script>
+</body>
+</html>

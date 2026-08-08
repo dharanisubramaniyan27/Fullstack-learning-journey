@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //FILTER
+        //FILTER-->IT IS ALSO AN ARRAY METHOD WHICH IS USED TO FILTER THE VALUES SEPARATELY FROM THE ENTIRE ARRAY AND IT IS IMP AND MANDATORY TO USE CONDITION
+        //WE WILL GET OUTPUT IN THE FORM OF ARRAY 
+
+        //NUMBERS
+        let arr=[10,20,30,40,50,60,70]
+        console.log(arr);
+        console.log(arr[6]);
+        console.log(arr[7]);
+
+        //BY USING FILTER METHOD
+        //SYNTAX...VARIABLE.FILTER((VAL)=>CONDITION)
+
+        let r=arr.filter((a)=>a>30)
+        console.log(r);
+
+        let p=arr.filter((b) => b>60 || b<20);
+        console.log(p);
+
+
+        //STRING
+        let fruits=["apple","banana","mango","orange","grapes","watermelon"]
+        console.log(fruits);
+        console.log(fruits[3]);
+
+        //BY USING FILTER METHOD
+        let fruit=["kiwi","pomegaranate","dargon","custardapple"]
+        console.log(fruit);
+
+        let a=fruit.filter((raj)=>raj=="kiwi")
+        console.log(a);
+
+        let b=fruit.filter((ran)=>ran=="dargon"|| ran=="pomegaranate")
+        console.log(b);
+
+        let c=fruit.filter((val)=>val >"custardapple")
+        console.log(c);
+
+        let d=fruit.filter((val)=>val < "dargon")
+        console.log(d);
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //REST OPERATOR ...->We use rest operator inorder to get remaining values at a time from the entire array in the form array
+
+        //This rest operator is denoted by(...)
+
+        //We have to use this rest operator followed by value
+
+        //It is imp and mandatory that after using this rest operator we should not have any elements
+
+        //REST OPERATOR BY USING ARRAY
+        let num=[20,30,40,50,60]
+        console.log(num);
+
+        let[a,b,c,...d]=num
+        console.log(a);
+        console.log(d);
+        console.log(...d);
+
+        let fruits=["Apple","Banana","Grapes","Mango","Pomegranate","Watermelon"]
+        console.log(fruits);
+
+        let[a1,...b1]=fruits
+        console.log(a1);
+        console.log(b1);
+        console.log(...b1);
+
+        //REST OPERATOR USING OBJECT
+        let obj1={
+            name:"Prasanna",
+            age:45,
+            city:"AP",
+            country:"India"
+        }
+        console.log(obj1);
+
+        let{name,age,...all}=obj1
+        console.log(name);
+        console.log(age);
+        console.log(all);
+
+        let obj2={
+            name1:"Kumar",
+            age:35,
+            city:"Kochi",
+            state:"Keralam"
+        }
+        console.log(obj2);
+
+        let{ name1,...remainingAll}=obj2
+        console.log(name1);
+        console.log(remainingAll);
+    </script>
+</body>
+</html>
