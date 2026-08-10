@@ -9,14 +9,15 @@
         <div id="para">
             <h1 id="demo">Arun</h1>
             <p class="cls" id="id2">Bala</p>
-            <h2>Deepak</h2>
-            <p id="demo">Dhanesh</p>
+            <h2 id="deepak">Deepak</h2>
+            <p id="dhanesh">Dhanesh</p>
             <h1 class="cls" id="id1">Preetham</h1>
-            <p>Avinash</p>
-            <h2>Ragul</h2>
+            <p id="avinash">Avinash</p>
+            <h2 id="ragul">Ragul</h2>
         </div>
 
     <script>
+        //DOM METHODS
         //DOCUMENT.GETELEMENT BY USING ID ---> It is used to return entire element W.R.T ID
         let a=document.getElementById("demo")
         console.log(a);
@@ -67,6 +68,7 @@
         let n=document.createElement("h1")
         console.log(n);
 
+        //ADDING THE CONTENT
         //INORDER TO ADD THE TEXT INSIDE THE ELEMENT WE SHOULD USE(INNERTEXT)
         n.innerText="MS DHONI"
         console.log(n);
@@ -109,7 +111,69 @@
         m.remove()
         console.log(parent);
 
-        //INSERTING 
+        //INSERTING AN ELEMENT
+        //INORDER TO INSERT AN ELEMENT WE SHOULD USE(INSERTBEFORE)
+        a=document.getElementById("demo")
+        console.log(a);
+
+        console.log(parent);
+
+        parent.insertBefore(n,a);
+        console.log(parent);
+
+        let x=document.getElementById("avinash")
+        console.log(x);
+
+        let y=document.getElementById("deepak")
+        console.log(y);
+
+        parent.insertBefore(x,y)
+        console.log(parent);
+
+        //REPLACING THE ELEMENT
+        //INORDER TO REPLACE AN ELEMENT WE SHOULD USE(REPLACECHILDREN)
+        let z=document.getElementById("ragul")
+        console.log(z);
+         
+        y=document.getElementById("deepak")
+        console.log(y);
+
+        y.replaceChildren(z)
+        console.log(parent);
+
+        let k=document.getElementById("dhanesh")
+        console.log(k);
+
+        x=document.getElementById("avinash")
+        console.log(x);
+
+        k.replaceChildren(x)
+        console.log(parent);
+
+
+        //DIFFERNECE BETWEEN INNERTEXT AND INNERHTML?
+        // INNERTEXT ---> IT IS USED TO PROVIDE THE TEXT FOR ALL THE ELEMENTS THAT ARE PRESENT INSIDE THE PARENT
+        console.log(parent.innerText);
+        //INNERHTML ----> IT IS USED TO PROVIDE ALL THE ELEMENTS THAT ARE PRESENT INSIDE THE PARENT
+        console.log(parent.innerHTML);
+
+        //PROVDING STYLING BY USING IAVASCRIPT
+
+        //By taking reference from the entire body
+        document.body.style.color="White"
+        document.body.style.backgroundColor="deeppink"
+        document.body.style.border="10px double black"
+        document.body.style.textAlign="center"
+
+        //By taking refernece from a single element
+        x.style.color="gold"
+        x.style.backgroundColor="green"
+        x.style.borderRadius="12px"
+
+
+        
+
+
     </script>
 </body>
 </html>
