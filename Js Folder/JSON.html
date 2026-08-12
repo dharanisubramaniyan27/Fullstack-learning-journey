@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj=`{
+        "Name":"Raja",
+        "Age":18,
+        "City":"Kochi",
+        "Country":"India"
+        }`
+        console.log(obj);
+
+        //INORDER TO CONVERT JSON TO NORMAL WE SHOULD USE JSON.PARSE()
+        let a =JSON.parse(obj)
+        console.log(a);
+
+        let person={
+            name:"Prasanna",
+            age:23,
+            city:"Ap",
+            country:"India"
+        }
+        console.log(person);
+
+        //INORDER TO CHANGE NORMAL TO JSON WE SHOULD USE JSON.STRINGFY()
+        let b=JSON.stringify(person)
+        console.log(b);
+
+    </script>
+</body>
+</html>
