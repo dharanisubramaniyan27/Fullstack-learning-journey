@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <button id="btn1">Click here for local storage</button>
+        <button id="btn2">Click here for session storage</button>
+    <script>
+        //LOCAL STORAGE
+        let btn1=document.getElementById("btn1")
+        btn1.addEventListener("click",()=>{
+            localStorage.setItem("Animal","Lion")
+            localStorage.getItem("Animal")
+            localStorage.setItem("Color","Pink")
+            localStorage.getItem("Color")
+            localStorage.removeItem("Animal")
+        })
+
+        //SESSION STORAGE
+        let button2=document.getElementById("btn2")
+        button2.addEventListener("click",()=>{
+            sessionStorage.setItem("Food","Briyani")
+            sessionStorage.getItem("Food")
+            sessionStorage.setItem("Sweet","Palkova")
+            sessionStorage.getItem("Sweet")
+            sessionStorage.removeItem("Sweet")
+        })
+    </script>
+</body>
+</html>
